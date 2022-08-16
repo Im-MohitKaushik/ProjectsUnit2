@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+.modal-dialog {
+ 
+ width: 500px;
+position: fixed;
+bottom: 30% !important;
+right: 20px !important;
+
+}
+#MyModel{
+    position: fixed;
+bottom: 120px !important;
+right: 120px !important;
+}
+ 
+  </style>
+</head>
+<body>
+
+
+<div class="messagingcontainer">
+  <h2>Large Modal</h2>
+  <!-- Trigger the modal with a button -->
+  <button style="  border: none;background-color: white; outline: none;" type="button" class="btn" data-toggle="modal" data-target="#myModal" id="MyModel"><img style="width:70px; height:70px;"src="https://cdn.yellowmessenger.com/jKXDG9PnpcOo1618202504436.jpg"  alt=""></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="overflow: scroll;">
+    <div class="modal-dialog modal-none">
+      <div class="modal-content">
+       
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+          <div style="width: 100%; height: 70px; background-color: #d0c3af; display: flex">
+            <div>   
+                 <img style="width: 50px; height: 50px; margin-top: 10px; margin-right: 20px; border-radius: 50%;" src="https://cdn.yellowmessenger.com/mdS5jLTTnubD1618198987239.jpg" alt="">
+            </div>
+     <div>   
+         <h4>Deyga</h4>
+        <p>Pure. Hand crafted. Natural</p>
+    </div>
+      
+    </div>
+        </div>
+      
+        <div class="modal-body">
+         <input style="width: 100%" type="text" placeholder="Enter Messagge">
+       
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

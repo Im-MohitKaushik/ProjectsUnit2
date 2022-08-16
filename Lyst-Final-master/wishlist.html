@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *{
+            margin: -1px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        #topMargin{
+            border: 1px solid black;
+            width: 100%;
+            height: 140px;
+        }
+        #Head{
+            width: 18%;
+            display: flex;
+            margin-left:80%;
+            margin-top: 10px;
+            font-size: 20px;
+            justify-content: flex-end;
+            justify-content: space-between;
+        }
+        #join{
+            width: 50px;
+            background-color: black;
+            color: white;
+            margin-left:10px;
+        }
+        #option{
+            border: 0px;
+            font-size: 18px;
+            width: 70px;
+        }
+        #Bar{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #searchBar{
+            width: 60%;
+        }
+        #Bar>h1{
+            font-size: 50px;
+        }
+        #Bar>p{
+            padding-top: 20px;
+            font-size: 24px;
+        }
+        #specify{
+            text-decoration: underline;
+        }
+        #bag{
+            width: 50px;
+        }
+        #wishHead{
+            margin-left: 150px;
+            margin-top: 20px;
+            font-size: 40px;
+        }
+
+
+        #fotMain{
+            width: 100%;
+            height: 700px;
+            background-color: #F5F4F2;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+        }
+        #fotImage>img{
+            width: 500px;
+        }
+        #fotMain>div{
+            margin-top: 80px;
+            font-size: 20px;
+            line-height: 35px;
+        }
+        #fotMain>div>h1{
+            font-size: 30px;
+            font-weight: 250;
+        }
+        #fotMain>div>p:hover{
+            text-decoration: underline;
+        }
+        #items{
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            gap: 50px;
+        }
+        #items>div{
+            width: fit-content;
+            border: 1px solid black;
+            padding: 2px;
+            font-size: 25px;
+            text-align: center;
+            margin-left: 20px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="topMargin">
+            <div id="Head">
+              <p>IN-US$</p>
+              <select name="" id="option">
+                  <option value="">Help</option>
+                  <option value="">Help center</option>
+                  <option value="">Contact us</option>
+                  <option value="">About us</option>
+                  <option value="">Careers</option>
+              </select>
+              <p>Sign in</p>
+              <button id="join">Join</button>
+            </div>
+            <div id="Bar">
+                <h1 id="switchLand">LYST</h1>
+                <p id="SwitchWom">WOMEN</p>
+                <p id="specify">MEN</p>
+                <input type="text" id="searchBar" placeholder="SEARCH">
+                <img id="wishlist" src="./Images/wishlist.PNG" alt="">
+                <img id="bag" src="./Images/Bag.PNG" alt="">
+            </div>    
+        </div>
+        <h1 id="wishHead">Saved Items</h1>
+        <div id="items">
+
+        </div>
+
+
+        <div id="fotMain">
+            <div id="fotImage">
+                <img src="./Images/relax1.png" alt="">
+            </div>
+            <div id="Woman">
+                <h1>Women</h1>
+                <p>Ankle boots</p>
+                <p>Cocktail dress</p>
+                <p>Gowns</p>
+                <p>Leather jackets</p>
+                <p>Maxi and long</p>
+                <p>dresses</p>
+                <p>Skinny jeans</p>
+                <p>Sweaters</p>
+                <h5>More..</h5>
+            </div>
+            <div id="Man">
+                <h1>MEN</h1>
+                <p>Leather jackets</p>
+                <p>Oxfords</p>
+                <p>Polo shirts</p>
+                <p>Raincoat and trench</p>
+                <p>coats</p>
+                <p>Loafers</p>
+                <p>High-top sneakers</p>
+                <p>Hoodies</p>
+                <h5>More..</h5>
+            </div>
+            <div>
+                <h1>HELP & INFO</h1>
+                <p>Help center</p>
+                <p>About us</p>
+                <p>Shipping policy</p>
+                <p>Returns policy</p>
+                <p>Payments</p>
+                <p>Refund policy</p>
+                <p>Developers</p>
+                <p>Careers</p>
+                <p>Contacts</p>
+                <p>Terms & conditions</p>
+                <p>Privacy policies</p>
+                <p>Intellectual property</p>
+                <p>Categories</p>
+                <p>Become a partner</p>
+                <p>Lyst Insights</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("switchLand").addEventListener("click",function(){
+        window.location.href="./index.html";
+     });
+     document.getElementById("SwitchWom").addEventListener("click",function(){
+        window.location.href="./women.html";
+     });
+     document.getElementById("specify").addEventListener("click",function(){
+        window.location.href="./men.html";
+     });
+     document.getElementById("bag").addEventListener("click",function(){
+        window.location.href="./bag.html";
+     });
+     document.getElementById("join").addEventListener("click",function(){
+        window.location.href="./signIn.html";
+     });
+
+
+var wishRes = JSON.parse(localStorage.getItem("wishData"));
+
+wishRes.map(function(elem,index){
+var check = document.getElementById("items");
+var image=document.createElement("img")
+image.setAttribute("src",elem.imageURL);
+    
+var price=document.createElement("p");
+price.textContent=elem.price;
+
+var div1 = document.createElement("div");
+div1.append(image,price);
+check.append(div1);
+});
+</script>

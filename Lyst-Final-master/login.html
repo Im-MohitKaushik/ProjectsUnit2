@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/login.css">
+</head>
+<body>
+    <div id="signCont">
+        <div id="topMargin">
+            <div id="Head">
+              <p>IN-US$</p>
+              <select name="" id="option">
+                  <option value="">Help</option>
+                  <option value="">Help center</option>
+                  <option value="">Contact us</option>
+                  <option value="">About us</option>
+                  <option value="">Careers</option>
+              </select>
+              <p>Sign in</p>
+              <button id="join">Join</button>
+            </div>
+            <div id="Bar">
+                <h1 id="alpha">LYST</h1>
+                <p id="beta">WOMEN</p>
+                <p id="charlie">MEN</p>
+                <input type="text" id="searchBar" placeholder="SEARCH">
+            </div>    
+        </div>
+        
+            <!-- ----------------------Base-------------- -->
+        <form action="submit" id="loginForm">
+        <div id="Base">
+        <div id="choice">
+            <div id="split">
+                <div id="switch_to_sign">New to Lyst?</div>
+                <div id="Al_Black">Already a member</div>
+            </div>
+            <h3>Log In</h3>
+            <h4>Email</h4>
+            <input type="email" placeholder="Enter your email address" id="inputId">
+            <h4>Password</h4>
+             <input type="password" placeholder="min 8 characters" id="inputPass">
+             <input type="submit" value="Join Lyst" id="JoButton">
+             <p>or</p>
+             <button id="Fabutton">Continue with Facebook</button>
+             <button id="Gobutton">Continue with Google</button>
+        </div>
+        <div id="right">
+            <div>
+                <h2>As a Lyst member you can…</h2>
+                <h3> Save your searches</h3>
+                <h3> Create a wishlist</h3>
+                <h3> Get alerts on your items</h3>
+            </div>
+        </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("switch_to_sign").addEventListener("click",function(){
+      window.location.href="./signIn.html";
+    });
+
+    var Data = JSON.parse(localStorage.getItem("Arr"));
+     
+     document.querySelector("#loginForm").addEventListener("submit",checkDetails);
+
+     function checkDetails(event){
+         event.preventDefault();
+         var inpId = document.querySelector("#inputId").value;
+         var inpPass = document.querySelector("#inputPass").value;
+        
+         var flag = false;
+            for(i=0;i<Data.length;i++){
+              if(Data[i].id == inpId && Data[i].pass == inpPass){
+                window.location.href="./index.html";
+                flag = true;
+                break;
+            }
+        }
+        if(!flag){
+        alert("Password Incorrect");
+        }
+     }
+     document.getElementById("alpha").addEventListener("click",function(){
+        window.location.href="./index.html";
+     });
+     document.getElementById("beta").addEventListener("click",function(){
+        window.location.href="./women.html";
+     });
+     document.getElementById("charlie").addEventListener("click",function(){
+        window.location.href="./men.html";
+     });
+     document.getElementById("join").addEventListener("click",function(){
+        window.location.href="./signIn.html";
+     });
+</script>

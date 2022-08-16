@@ -1,0 +1,135 @@
+*{
+    margin: -1px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#topMargin{
+    border: 1px solid black;
+    width: 100%;
+    height: 140px;
+}
+#Head{
+    width: 18%;
+    display: flex;
+    margin-left:80%;
+    margin-top: 10px;
+    font-size: 20px;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+#join{
+    width: 50px;
+    background-color: black;
+    color: white;
+    margin-left:10px;
+}
+#option{
+    border: 0px;
+    font-size: 18px;
+    width: 70px;
+}
+#Bar{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+#searchBar{
+    width: 75%;
+}
+#Bar>h1{
+    font-size: 50px;
+}
+#Bar>p{
+    padding-top: 20px;
+    font-size: 24px;
+}
+#Base{
+    width: 60%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+}
+#Base>div{
+    width: 45%;
+    /* border: 1px solid black;     */
+}
+#Base>div>h3{
+    width: 340px;
+    text-align: center;
+    margin: auto;
+}
+#choice{
+    font-size: 25px;
+    padding-top: 50px;
+    /* display: flex; */
+}
+#choice>p{
+    font-size: 23px;
+    text-align: center;
+    margin-top: 20px;
+}
+#choice>h3{
+    padding-top: 50px;
+}
+#split{
+    display: flex;
+}
+#split>div{
+    display: flex;
+    width: 50%;
+    padding: 20px 11px;
+    border: 0.5px solid black;
+}
+#JoButton{
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+}
+h4{
+    margin-top: 40px;
+}
+#Fabutton{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    background-color: #3D5C98;
+    color: aliceblue;
+}
+#Gobutton{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+#choice>input{
+    width: 100%;
+    height: 50px;
+}
+#checkbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+#right{
+    background-color: #BCA0F7;
+    margin-left: 50px;
+}
+#right>div{
+    background-color: #FFFFFF;
+    width: 85%;
+    height: 220px;
+    margin: auto;
+    margin-top: 480px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+#blackHead{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #fiCheckout{
+            padding-top: 50px;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(224, 234, 238);
+            margin: auto;
+            margin-top: 150px;
+        }
+        #fiCheckout>p{
+            font-size: 25px;
+            padding-left: 70px;
+        }
+        #fiCheckout>input{
+            background-color: white;
+            width: 250px;
+            height: 30px;
+            margin-left: 70px;
+            padding-left: 20px;
+        }
+        #fiCheckout>button{
+            margin-left: 70px;
+            margin-top: 50px;
+            height: 40px;
+            width: 275px;
+            font-size: 25px;
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="fiCheckout">
+        <p>E-Mail:-</p>
+        <input type="email" placeholder="Enter Your Mail">
+        <p>Account No:-</p>
+        <input type="number" placeholder="Enter Your account number">
+        <p>Enter IFSC code</p> 
+        <input type="type"> <br> <br>
+        <button id="succedded">Proceed To Pay</button>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("succedded").addEventListener("click",function(){
+        window.location.href="./placed.html";
+    });
+</script>

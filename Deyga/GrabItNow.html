@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="./styleIndex/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation and Corousal -->
+    <div class="container-fluid p-0 m-0" class="full-screen">
+        <div id="navbar" class="navbar-fixed"></div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators text-right" style="gap: 10px;">
+
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <!-- style="margin-left: 100px; gap: 10px;" -->
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img class="d-block w-100"
+                        src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Banner-01_3_1400x.jpg?v=1646720515"
+                        alt="Los Angeles" style="width:100%;">
+
+                </div>
+
+
+                <div class="item">
+                    <video controls autoplay id="player"
+                        src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/kajal_desk_new.mp4?v=1642758111"
+                        type="video/ogg"></video>
+
+                </div>
+
+                <div class="item">
+                    <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Clear_Skin_Banners-01_-_Copy_272d35fb-91bc-48d2-962b-1d329de47c5b_1400x.jpg?v=1642836734"
+                        alt="New York" style="width:100%;">
+
+                </div>
+                <div class="item">
+                    <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Banner-01_1_1400x.jpg?v=1644926511"
+                        alt="New York" style="width:100%;">
+
+                </div>
+
+                <div class="item">
+                    <img src="https://cdn.shopify.com/s/files/1/0034/7901/1441/files/Clear_Skin_Banners-02_1400x.jpg?v=1642499422"
+                        alt="New York" style="width:100%;">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Grab It Now -->
+
+
+
+    <div id="grabItNowContainer">
+        <h1>Grab it now</h1>
+        <div id="grabItNowButtonContainer">
+
+            <button id="bestSeller"> Best Sellers</button>
+            <button id="LovedCombo"> Loved Combos</button>
+
+        </div>
+        <div id="indexGridContainer" class="owl-carousel owl-theme"></div>
+        <div>
+
+
+            
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.1/owl.carousel.min.js"
+        integrity="sha512-Mbgs3jiG1Gj9Z0yQquXz1pe/ylRaSa4kYrOHj1j/86yCQEyqrO33/+WGGFHAjAE4asmrq3D4kUzYd37LUQrBJA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
+<script type="module">
+
+
+
+    import { navbar, footer } from "./componentsIndex/navbar.js"
+    document.getElementById('navbar').innerHTML = navbar();
+    //document.getElementById('footer').innerHTML = footer();
+
+    import { navbarJs } from "./scripts/navbarJsPart.js"
+    navbarJs();
+
+
+
+    ///Navbar design
+    $(window).scroll(function () {
+        var nav = $('#navbar');
+        var top = 50;
+
+
+        if ($(window).scrollTop() >= top) {
+
+            nav.addClass('fixed');
+
+
+        } else {
+            nav.removeClass('fixed');
+        }
+    });
+
+
+
+
+
+</script>
+<script type="text/javascript">
+    var indexBestSeller = [
+        {
+            id: "1",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/904_0003_Beetroot_07aa7e6f-c52b-42d1-8839-a4678e5b2ef3_400x.jpg?v=1641838454",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/02-in-and-out_600x.jpg?v=1645614549",
+            discount: "14% Off",
+            name: "Beetroot Lip Balm",
+            viewers: " 1961 reviews",
+            price: "249.00",
+            strike: "₹290.00"
+        },
+        {
+            id: "2",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Aloe-vera-Gel_1_400x.jpg?v=1647947302",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/01_1_b105980f-cffc-485c-a18e-b80dbdab8056_600x.jpg?v=1647947302",
+            discount: "",
+            name: "Aloe Vera Gel",
+            viewers: "717 reviews",
+            price: " 390.00",
+            strike: "",
+        },
+        {
+            id: "3",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/ICONS-05_400x.jpg?v=1648210587",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Charcoal-soap_600x.jpg?v=1648210587",
+            discount: "15% Of",
+            name: "Charcoal Bath Bar",
+            viewers: "566 reviews",
+            price: "349.00",
+            strike: "₹410.00",
+        },
+        {
+            id: "4",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Strawberry_400x.jpg?v=1647863204",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/J8A5980_700x.jpg?v=1647863204",
+            discount: "14% Of",
+            name: "Strawberry Lip Scrub",
+            viewers: "62 reviews",
+            price: "249.00",
+            strike: "₹290.00",
+        },
+
+
+    ];
+
+
+
+    var indexLovedCombos = [
+
+        {
+            id: "1",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Nourished_20Lips_20Combo_904x1156_1_600x.jpg?v=1641839189",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Nourished_20Lips_20Combo_20_1_904x1156_1_700x.jpg?v=1641839189",
+            discount: "",
+            name: "Nourished Lips Combo",
+            viewers: "31 reviews",
+            price: "",
+            strike: "",
+        },
+        {
+            id: "2",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Clear_20Skin_20Combo_20_1_904x11562_400x.jpg?v=1642793784",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/ClearSkinCombo_700x.jpg?v=1642793784",
+            discount: "",
+            name: "Clear Skin Combo",
+            viewers: "48 reviews",
+            price: "729.00",
+            strike: "₹800.00",
+        },
+        {
+            id: "3",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/NightCombo-edited_400x.jpg?v=1644841165",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/NightCombo-edited_400x.jpg?v=1644841165",
+            discount: "",
+            name: "Hydro Boosting Combo",
+            viewers: "4 reviews",
+            price: "780.00",
+            strike: "₹980.00",
+        },
+        {
+            id: "4",
+            image: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Hair_20Strengthening_20Combo_20_1_700x.jpg?v=1641031502",
+            hovImg: "https://cdn.shopify.com/s/files/1/0034/7901/1441/products/Hair_20Strengthening_20Combo_700x.jpg?v=1641031502",
+            discount: "",
+            name: "Hair Strengthening Combo",
+            viewers: "9 reviews",
+            price: "1,249.00",
+            strike: "₹1,330.00",
+        },
+
+
+
+
+    ]
+
+
+    var indexGridContainer = document.getElementById("indexGridContainer");
+
+    document.getElementById("bestSeller").addEventListener("click", () => {
+        indexGridContainer.innerHTML = null;
+        document.getElementById("bestSeller").style.background = "peru";
+
+        document.getElementById("LovedCombo").style.background = "none";
+        openBestSeller()
+    });
+    document.getElementById("LovedCombo").addEventListener("click", () => {
+        document.getElementById("LovedCombo").style.background = "peru"
+
+        document.getElementById("bestSeller").style.background = "none";
+
+        indexGridContainer.innerHTML = null;
+
+        openLovedCombo()
+    })
+
+    // --best seller ---------
+    function openBestSeller() {
+        indexBestSeller.map(function (ele, index) {
+            let box = document.createElement("div")
+            let viwerStar = document.createElement("div")
+            let priceFlex = document.createElement("div")
+            let ImageLessBox = document.createElement("div")
+            ImageLessBox.setAttribute("class", "margin0px")
+            box.setAttribute("class", "item");
+            box.setAttribute("id", "IndexgridBoxed");
+
+            $(box).hover(function () {
+                box.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px";
+            }, function () {
+                // out
+                box.style.boxShadow = "none";
+
+            }
+            );
+            //box-shadow: ;
+            // box-shadow:
+
+            var img = document.createElement("img");
+            img.setAttribute("id", "gridImage");
+
+
+
+            let name = document.createElement("h4")
+            name.innerText = ele.name;
+
+            viwerStar.style.display = "flex";
+
+
+
+            viwerStar.style.justifyContent = "center";
+            let star = document.createElement("div");
+
+            rate = document.createElement("span")
+            rate.setAttribute("class", "fa fa-star checked");
+
+
+            rate2 = document.createElement("span")
+            rate2.setAttribute("class", "fa fa-star checked");
+
+            rate3 = document.createElement("span")
+            rate3.setAttribute("class", "fa fa-star checked");
+
+            rate4 = document.createElement("span")
+            rate4.setAttribute("class", "fa fa-star checked");
+
+            rate5 = document.createElement("span")
+            rate5.setAttribute("class", "fa fa-star checked");
+
+            star.append(rate, rate2, rate3, rate4, rate5)
+            let viewers = document.createElement("p")
+            viewers.innerText = ele.viewers;
+
+
+            priceFlex.setAttribute("id", "priceFlex")
+
+            //name , viwerstar,priceflex, button
+
+            let price = document.createElement("h5")
+            price.innerText = `MRP ₹ ${ele.price}`;
+
+
+            let strike = document.createElement("strike")
+            strike.innerText = ele.strike;
+            strike.style.margintop = "40px"
+            let button = document.createElement("button")
+            button.innerText = "Add to Cart";
+            button.style.width = "100px";
+
+            $(button).hover(function () {
+
+                button.style.background = "black"
+                button.style.color = "white"
+            }, function () {
+                // out
+                button.style.background = "white"
+                button.style.color = "black"
+            }
+            );
+
+
+            button.style.height = "30px";
+            button.style.borderRadius = "50px";
+
+            img.src = ele.image;
+
+            $(img).hover(function () {
+
+                img.src = ele.hovImg;
+            }, function () {
+                // out
+                img.src = ele.image;
+            }
+            );
+
+            viwerStar.append(star, viewers)
+            priceFlex.append(price, strike)
+            ImageLessBox.append(name, viwerStar, priceFlex, button)
+
+            box.append(img, ImageLessBox)
+            indexGridContainer.append(box)
+        })
+
+
+    }
+
+    // ---loved combo------
+
+    function openLovedCombo() {
+        indexLovedCombos.map(function (ele, index) {
+            let box = document.createElement("div")
+            let viwerStar = document.createElement("div")
+            let priceFlex = document.createElement("div")
+            let ImageLessBox = document.createElement("div")
+            ImageLessBox.setAttribute("class", "margin0px")
+            box.setAttribute("class", "item");
+            box.setAttribute("id", "IndexgridBoxed");
+
+            $(box).hover(function () {
+                box.style.boxShadow = "rgba(0, 0, 0, 0.24) 0px 3px 8px";
+            }, function () {
+                // out
+                box.style.boxShadow = "none";
+
+            }
+            );
+            //box-shadow: ;
+            // box-shadow:
+
+            var img = document.createElement("img");
+            img.setAttribute("id", "gridImage");
+
+
+
+            let name = document.createElement("h4")
+            name.innerText = ele.name;
+
+            viwerStar.style.display = "flex";
+
+
+
+            viwerStar.style.justifyContent = "center";
+            let star = document.createElement("div");
+
+            rate = document.createElement("span")
+            rate.setAttribute("class", "fa fa-star checked");
+
+
+            rate2 = document.createElement("span")
+            rate2.setAttribute("class", "fa fa-star checked");
+
+            rate3 = document.createElement("span")
+            rate3.setAttribute("class", "fa fa-star checked");
+
+            rate4 = document.createElement("span")
+            rate4.setAttribute("class", "fa fa-star checked");
+
+            rate5 = document.createElement("span")
+            rate5.setAttribute("class", "fa fa-star checked");
+
+            star.append(rate, rate2, rate3, rate4, rate5)
+            let viewers = document.createElement("p")
+            viewers.innerText = ele.viewers;
+
+
+            priceFlex.setAttribute("id", "priceFlex")
+
+            //name , viwerstar,priceflex, button
+
+            let price = document.createElement("h5")
+            price.innerText = `MRP ₹ ${ele.price}`;
+
+
+            let strike = document.createElement("strike")
+            strike.innerText = ele.strike;
+            strike.style.margintop = "40px"
+            let button = document.createElement("button")
+            button.innerText = "Add to Cart";
+            button.style.width = "100px";
+
+            $(button).hover(function () {
+
+                button.style.background = "black"
+                button.style.color = "white"
+            }, function () {
+                // out
+                button.style.background = "white"
+                button.style.color = "black"
+            }
+            );
+
+
+            button.style.height = "30px";
+            button.style.borderRadius = "50px";
+
+            img.src = ele.image;
+
+            $(img).hover(function () {
+
+                img.src = ele.hovImg;
+            }, function () {
+                // out
+                img.src = ele.image;
+            }
+            );
+
+            viwerStar.append(star, viewers)
+            priceFlex.append(price, strike)
+            ImageLessBox.append(name, viwerStar, priceFlex, button)
+
+            box.append(img, ImageLessBox)
+            indexGridContainer.append(box)
+        })
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>

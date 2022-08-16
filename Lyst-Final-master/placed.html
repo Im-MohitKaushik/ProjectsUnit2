@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #upper{
+      width: 100%;
+      margin: auto;
+      /* border: 1px solid red; */
+      box-shadow: 10px 10px 8px #888888;
+      height: 500px;
+  }
+  #upper>h1{
+      text-align: center;
+      padding-bottom: 5%;
+      padding-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    button{
+        border-radius: 18px;
+        margin-top: 5%;
+        margin-left: 40%;
+        padding: 15px;
+        width: 20%;
+        font-size: 25px;
+    }
+    #upper>img{
+      margin-left: 42%;  
+      /* border: 1px solid black; */
+      margin-top: 1%;
+      width: 16%;
+    }
+    #upper>a{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 50px;
+        font-size: 25px;
+        margin: 0 0 10% 43%;
+        text-decoration: none;
+        color: black;
+        
+    }
+    </style>
+</head>
+<body>
+    <div id="upper">
+           <img src="./Images/icon.PNG" alt="">
+           <h1>Your order has been successfully Placed</h1>
+           <a href="">Continue Shopping</a>
+    </div>
+    <button id="land">Go Home</button>
+</body>
+</html>
+<script>
+    document.getElementById("land").addEventListener("click",function(){
+      window.location.href="./index.html";  
+    });
+</script>

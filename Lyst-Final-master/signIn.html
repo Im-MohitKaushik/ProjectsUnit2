@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/signIn.css">
+</head>
+<body>
+    <div id="signCont">
+        <div id="topMargin">
+            <div id="Head">
+              <p>IN-US$</p>
+              <select name="" id="option">
+                  <option value="">Help</option>
+                  <option value="">Help center</option>
+                  <option value="">Contact us</option>
+                  <option value="">About us</option>
+                  <option value="">Careers</option>
+              </select>
+              <p>Sign in</p>
+              <button id="join">Join</button>
+            </div>
+            <div id="Bar">
+                <h1 id="ka">LYST</h1>
+                <p id="kha">WOMEN</p>
+                <p id="ga">MEN</p>
+                <input type="text" id="searchBar" placeholder="SEARCH">
+            </div>    
+        </div>
+        
+            <!-- ----------------------Base-------------- -->
+        <form action="" id="signForm">
+        <div id="Base">
+        <div id="choice">
+            <div id="split">
+                <div id="blackHead">New to Lyst?</div>
+                <div id="SwitchLOGIN">Already a member</div>
+            </div>
+            <h3>Search thousands of fashion brands and stores all in one place</h3>
+            <p>We just need a few details from you first.</p>
+            <h4>Email</h4>
+            <input type="email" placeholder="Enter your email address" id="email">
+            <h4>Password</h4>
+             <input type="password" placeholder="min 8 characters" id="pass">
+             <div id="checkbox">
+                <input type="checkbox">
+                <p> I would like to hear about products, services, and sales, including personalized email alerts from Lyst. You can unsubscribe at any time.</p>
+             </div>
+             <input type="submit" value="SIGN IN" id="JoButton">
+             <p>or</p>
+             <button id="Fabutton">Continue with Facebook</button>
+             <button id="Gobutton">Continue with Google</button>
+             <p>By creating an account, you consent to Lyst’s Terms & Conditions. To learn more about how Lyst uses and protects your personal data, please read Lyst’s Privacy Policy.</p>
+        </div>
+        <div id="right">
+            <div>
+                <h2>As a Lyst member you can…</h2>
+                <h3> Save your searches</h3>
+                <h3> Create a wishlist</h3>
+                <h3> Get alerts on your items</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
+<script>
+    document.getElementById("SwitchLOGIN").addEventListener("click",function(){
+        window.location.href="./login.html"
+    });
+    var loginCred = JSON.parse(localStorage.getItem("Arr"))  || [];
+    document.querySelector("#signForm").addEventListener("submit",email);
+    function email(event){
+      event.preventDefault();
+      var id = document.getElementById("email").value;
+      var passcode = document.getElementById("pass").value;
+      
+      var credObj = {
+          id:id,
+          pass:passcode,
+      };
+      loginCred.push(credObj);
+      localStorage.setItem("Arr", JSON.stringify(loginCred));
+      window.location.href="./login.html";
+    };
+    document.getElementById("ka").addEventListener("click",function(){
+        window.location.href="./index.html";
+     });
+     document.getElementById("kha").addEventListener("click",function(){
+        window.location.href="./women.html";
+     });
+     document.getElementById("ga").addEventListener("click",function(){
+        window.location.href="./men.html";
+     });
+</script>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+            margin: -1px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        #topMargin{
+            border: 1px solid black;
+            width: 100%;
+            height: 140px;
+        }
+        #Head{
+            width: 18%;
+            display: flex;
+            margin-left:80%;
+            margin-top: 10px;
+            font-size: 20px;
+            justify-content: flex-end;
+            justify-content: space-between;
+        }
+        #join{
+            width: 50px;
+            background-color: black;
+            color: white;
+            margin-left:10px;
+        }
+        #option{
+            border: 0px;
+            font-size: 18px;
+            width: 70px;
+        }
+        #Bar{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #searchBar{
+            width: 60%;
+        }
+        #Bar>h1{
+            font-size: 50px;
+        }
+        #Bar>p{
+            padding-top: 20px;
+            font-size: 24px;
+        }
+        #specify{
+            text-decoration: underline;
+        }
+        #blck{
+            display: inline-block;
+            position: relative;
+            border: 0px;
+            width: 250px;
+            margin-top: 20px;
+            margin-left: 80px;
+            height: 60px;
+            font-size: 30px;
+        }
+        #Parent{
+            display: grid;
+            grid-template-columns: 22% 78%;
+        }
+        #Parent>div{
+            border: 1px solid black;
+        }
+        #Parent>div>h1{
+            font-weight: 400;
+            margin: 20px 0px 0px 80px;
+        }
+        #LeftCat{
+            overflow-y: scroll;
+        }
+        #sort{
+            margin-top: 30px;
+            margin-left: 38%;
+            height: 50px;
+            font-size: 20px;
+            width: 320px;
+        }
+        span{
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        #Setbutt{
+        /* border: 1px solid black; */
+        width: 91.7%;
+        margin-left: 30px;
+        margin-top: 10px;
+        background-color: #F5F4F2;
+        }
+        #Setbutt>button{
+            font-size: 20px;
+            width: 130px;
+            height: 30px;
+            margin: 10px;
+            background-color: white;
+            border: 0px;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 40px;
+            /* border: 1px solid black; */
+        }
+        #Panoti{
+            height:60px;
+            font-size: 45px;
+            padding: 50px;
+            background-color: #F5F4F2;
+        }
+        #container>div>div2>heart{
+            width: 50px;
+        }
+        #heart1{
+            width: 50px;
+        }
+        #bag{
+            width: 50px;
+        }
+        #moveToCart{
+            width: 100px;
+            height: 30px;
+            font-size: 18px;
+        }
+        #rightNew{
+            margin-left: 1px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="signCont">
+        <div id="topMargin">
+            <div id="Head">
+              <p>IN-US$</p>
+              <select name="" id="option">
+                  <option value="">Help</option>
+                  <option value="">Help center</option>
+                  <option value="">Contact us</option>
+                  <option value="">About us</option>
+                  <option value="">Careers</option>
+              </select>
+              <p>Sign in</p>
+              <button id="join">Join</button>
+            </div>
+            <div id="Bar">
+                <h1 id="switchLand">LYST</h1>
+                <p id="SwitchWom">WOMEN</p>
+                <p id="specify">MEN</p>
+                <input type="text" id="searchBar" placeholder="SEARCH">
+                <img id="wishlist" src="./Images/wishlist.PNG" alt="">
+                <img id="bag" src="./Images/Bag.PNG" alt="">
+            </div>    
+        </div>
+        <div id="Panoti">BROWSE</div>
+        <!-- WOMEN -->
+        <div id="Parent">
+            <div id="LeftCat">
+                <h1>Filters</h1>
+                <select name="" id="blck">    
+                    <option value="">Gender-Men's</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+                <select name="" id="blck">    
+                   <option value="">Category</option>
+                   <option value="">All</option>
+                   <option value="">Women's</option>
+                   <option value="">Men's</option>
+                </select>
+                <select name="" id="blck">    
+                    <option value="">Sales</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+                 <select name="" id="blck">    
+                    <option value="">Price</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+                 <select name="" id="blck">    
+                    <option value="">Shipping</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+                 <select name="" id="blck">    
+                    <option value="">Color</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+                 <select name="" id="blck">    
+                    <option value="">Material</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+                 <select name="" id="blck">    
+                    <option value="">Brand</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+                 <select name="" id="blck">    
+                    <option value="">Store</option>
+                    <option value="">All</option>
+                    <option value="">Women's</option>
+                    <option value="">Men's</option>
+                 </select>
+            </div>
+            <div id="rightNew">
+                <div>
+                    <span>552,569 products, 112 stores</span>
+                    <select onchange="handlePriceSort()" id="sort">
+                        <option value="">Sort by recommended</option>
+                        <option value="high">Sort by price(high to low)</option>
+                        <option value="low">Sort by price(low to high)</option>
+                    </select>
+                    <div id="Setbutt">
+                        <button>+ Clothing</button>
+                        <button>+ Shoes</button>
+                        <button>+ Accessories</button>
+                        <button>+ Bags</button>
+                        <button>+ Jwellery</button>
+                        <button>+ Home</button>
+                    </div>
+                </div>
+                <form action="" id="container"></form>
+            </div>
+        </div>
+        
+</body>
+</html>
+<script>
+    document.getElementById("SwitchWom").addEventListener("click",function(){
+        window.location.href="women.html";
+    });
+    document.getElementById("switchLand").addEventListener("click",function(){
+        window.location.href="index.html";
+    });
+    document.getElementById("join").addEventListener("click",function(){
+        window.location.href="signIn.html";
+    });
+    document.getElementById("bag").addEventListener("click",function(){
+        window.location.href="bag.html";
+    });
+    document.getElementById("wishlist").addEventListener("click",function(){
+        window.location.href="wishlist.html";
+    });
+
+
+
+    // -----------------Final Data------------------
+
+
+    var data2 = [
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/gilt/2f3fd485/burberry-A1189-BLACK-Short-Wimbledon-Trench-Coat.jpeg",
+    heart:"♡",
+    name:"Gucci",
+    description:"raincoat- Multicolor",
+    price:"15",
+    pin:"🔗Mytheresa"
+},
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/gilt/60dffc6c/burberry-Honey-Short-Wimbledon-Trench-Coat.jpeg",
+    heart:"♡",
+    name:"Frame",
+   description:"Double collar - Black",
+    price:"24",
+    pin:"🔗Mytheresa"
+},
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/gilt/60dffc6c/burberry-Honey-Short-Wimbledon-Trench-Coat.jpeg",
+    heart:"♡",
+    name:"GUCCI",
+   description:"Embroidered Caftan ",
+    price:"75",
+    pin:"🔗Mytheresa"
+},
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/eraldo/64574c1a/saint-laurent-Black-Classic-Trench-Coat.jpeg",
+    heart:"♡",
+    name:"Nike",
+   description:"Long Coat ",
+    price:"26",
+    pin:"🔗Rue La La"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/mclabels/9ed93f05/burberry-BEIGE-Cotton-Trench-Coat.jpeg",
+    heart:"♡",
+    name:"GUCCI",
+   description:"Appliquéd High-rise Flared",
+    price:"66",
+    pin:"🔗NET-A-PORTER"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/bottegaveneta/f2b3b535/bottega-veneta-potion-Trench.jpeg",
+    heart:"♡",
+    name:"FRAME",
+   description:"Le High Flare Snake-print High-rise Flared Jeans - Multicolor",
+    price:"18",
+    pin:"🔗THE OUTNET.COM"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/gilt/2867d723/burberry-Grey-Chelsea-Heritage-Trench-Coat.jpeg",
+    heart:"♡",
+    name:"Fendi",
+   description:"Leather And Shearling Jacket ",
+    price:"698",
+    pin:"🔗Mytheresa"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/hugo_boss/e839f992/hugo-Black-Slim-fit-Trench-Coat-With-Belted-Closure.jpeg",
+    heart:"♡",
+    name:"UGG",
+   description:"Kiana Faux Fur Jacket ",
+    price:"18",
+    pin:"🔗Tessuti UK"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/grifo210/f8ffc15d/burberry-White-Camicia-Con-Monogramma.jpeg",
+    heart:"♡",
+    name:"GUCCI",
+   description:"Belted Wool Crêpe Jumpsuit - Natural",
+    price:"378",
+    pin:"🔗Mytheresa"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/mrporter/bcef6b85/burberry-Neutrals-Reversible-Checked-Quilted-Shell-Down-Hooded-Jacket.jpeg",
+    heart:"♡",
+    name:"GUCCI",
+   description:"Web Striped-detail Tweed Coat ",
+    price:"3163",
+    pin:"🔗FARFETCH "
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/eraldo/3b5063d7/burberry-Neutrals-Vintage-Check-Print-Swim-Shorts.jpeg",
+    heart:"♡",
+    name:"HEBE STUDIO",
+   description:"Nasty Gal We Lounge Love Knitted Sweater And Pants Set - Black",
+    price:"494",
+    pin:"🔗Michele Franzese Moda"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/tessuti/578eb159/moschino-Navy-Milano-Tonal-T-shirt-Blue.jpeg",
+    heart:"♡",
+    name:"Nasty Gal",
+   description:"Premium Rib Collar Top And Split Midi Set ",
+    price:"211",
+    pin:"🔗Nasty Gal"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/coggles/6a7d5f72/the-north-face-Green-Saikuru-Jacket.jpeg",
+    heart:"♡",
+    name:"Pistola",
+   description:"X Revolve Grover Field Suit ",
+    price:"1293",
+    pin:"🔗REVOL"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/gilt/bd6bfb2f/burberry-MULTICOLORED-Jacket.jpeg",
+    heart:"♡",
+    name:"Proenza Schouler",
+   description:"Painterly Stripe Marocaine Button-down Shirt  ",
+    price:"424",
+    pin:"🔗Saks OFF 5TH"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/frmoda/e8479f47/palm-angels-NERO-Short-Sleeve-T-shirt-Crew-Neckline-Jumper-Logo.jpeg",
+    heart:"♡",
+    name:"Tommy Hilfiger",
+   description:"Linear Logo T-shirt ",
+    price:"203",
+    pin:"🔗The Hut"
+},
+
+{
+    imageURL:"https://cdna.lystit.com/200/250/tr/photos/mclabels/8b919958/burberry-black-Blazer-altri-materiali.jpeg",
+    name:"GUCCI",
+   description:"GG Perforated Cotton Polo Shirt ",
+    price:"845",
+    pin:"🔗Mytheresa"
+},
+];
+
+data2.map(function(elem){
+    //    console.log(elem)
+    var div=document.createElement("div")
+    
+    div.setAttribute("id","flex")
+    var div1=document.createElement("div")
+    div1.setAttribute("id","div1")
+
+    // *********Button**********
+
+    var button = document.createElement("input");
+    // button.innerText = "Add to bag";
+    button.type="submit";
+    button.value="Add to bag";
+    button.id="moveToCart";
+    button.style.marginLeft="5px";
+    button.addEventListener("click",function(){
+       wishlist(elem);
+    });
+
+    //  *****heart*******
+
+    var heart=document.createElement("p")
+    heart.textContent=elem.heart;
+    heart.id="moveToWishlist";
+    heart.style.fontSize="30px";
+    heart.style.marginLeft="5px";
+    heart.addEventListener("click",function(){
+       Iwish(elem);
+    });
+
+
+//  *****image*******
+
+    var image=document.createElement("img")
+    image.setAttribute("src",elem.imageURL);
+    image.style.marginLeft="5px";
+
+    var div2=document.createElement("div")
+    div2.setAttribute("id","div2")
+
+    // *****name*******
+    var name=document.createElement("h3")
+    name.textContent=elem.name;
+    name.style.marginLeft="5px";
+
+  // *****discription*******
+    var desc=document.createElement("p")
+    desc.setAttribute("id","p2")
+    desc.textContent=elem.description;
+    desc.style.marginLeft="5px";
+
+// *****price*******
+    var price=document.createElement("p");
+    price.setAttribute("id","p1")
+    price.textContent=elem.price;
+    price.style.marginLeft="5px";
+    price.style.fontSize="25px";
+    price.style.fontWeight="800";
+
+       // *****pin*******
+       var pin=document.createElement("p")
+     pin.textContent=elem.pin;
+     pin.style.marginLeft="8px";
+
+    
+    div2.append(button,heart,name,price,desc,pin)
+    div1.append(image)
+
+    div.append(div1,div2)
+    document.querySelector("#container").append(div)
+   });
+
+//    -------------------------High to low-------------
+function handlePriceSort(){
+    // elem.preventDefault();
+    var selected = document.querySelector("#sort").value;
+    if(selected == "high"){
+      data2.sort(function(a,b){
+        return Number(b.price) - Number(a.price);
+      });
+    }
+    if(selected == "low"){
+        data2.sort(function(a,b){
+        return Number(a.price) - Number(b.price);
+      });
+    }
+  displayData(data2);
+}
+  var cont = document.querySelector("#container");
+function displayData(data2){
+    cont.innerHTML="";
+    data2.map(function(elem){
+    //    console.log(elem)
+    var div=document.createElement("div")
+    
+    div.setAttribute("id","flex")
+    var div1=document.createElement("div")
+    div1.setAttribute("id","div1")
+
+//  *****image*******
+
+    var image=document.createElement("img")
+    image.setAttribute("src",elem.imageURL);
+
+    var div2=document.createElement("div")
+    div2.setAttribute("id","div2")
+
+//  *****heart*******
+
+    var heart=document.createElement("p")
+    heart.textContent=elem.heart;
+
+    // *****name*******
+    var name=document.createElement("h3")
+    name.textContent=elem.name;
+
+  // *****discription*******
+    var desc=document.createElement("p")
+    desc.setAttribute("id","p2")
+    desc.textContent=elem.description;
+
+// *****price*******
+    var price=document.createElement("p");
+    price.setAttribute("id","p1")
+    price.textContent=elem.price;
+
+       // *****pin*******
+       var pin=document.createElement("p")
+     pin.textContent=elem.pin;
+
+    
+    div2.append(heart,name,price,desc,pin)
+    div1.append(image)
+
+    div.append(div1,div2)
+    document.querySelector("#container").append(div)
+   });
+
+}
+
+
+// -----------------------------------------cart---------------------
+
+document.querySelector("#moveToCart").addEventListener("click", wishlist);
+var wishList1 = JSON.parse(localStorage.getItem("cart"))  || [];
+function wishlist(elem){
+    wishList1.push(elem);
+    localStorage.setItem("cart",JSON.stringify(wishList1));
+}
+
+
+// ---------------------------Wishlist_________------------------
+document.querySelector("#moveToWishlist").addEventListener("click", Iwish);
+var IwishData = JSON.parse(localStorage.getItem("wishData"))  || [];
+function Iwish(elem){
+    IwishData.push(elem);
+    localStorage.setItem("wishData",JSON.stringify(IwishData));
+}
+</script>
